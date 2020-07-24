@@ -5,7 +5,7 @@ This is a text-based [polybar](https://github.com/polybar/polybar) default confi
 
 Here's what it looks like, on my PC:
 
-[](https://raw.githubusercontent.com/flakyhermit/polybar-simple-default/master/screenshot.png)
+![](https://raw.githubusercontent.com/flakyhermit/polybar-simple-default/master/screenshot.png)
 
 ## Installation
 
