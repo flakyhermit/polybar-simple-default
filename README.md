@@ -15,3 +15,4 @@ $ git clone https://github.com/flakyhermit/polybar-simple-default
 $ cp polybar-simple-default/* ~/.config/polybar/
 ```
 
+Run `polybar default`
