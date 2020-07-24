@@ -47,13 +47,13 @@ padding-right = 1
 module-margin-left = 
 module-margin-right = 1
 
-font-0 = Jetbrains Mono Medium;1
+font-0 = Dejavu Sans Mono;1
 
 wm-name = i3
 
 modules-left = i3 
 modules-center = date 
-modules-right = filesystem xbacklight pulseaudio memory cpu temperature battery powermenu
+modules-right = filesystem xbacklight pulseaudio wlan memory cpu temperature battery powermenu
 
 tray-position = right
 tray-padding = 2
@@ -197,6 +197,31 @@ format-prefix-foreground = ${colors.foreground-alt}
 format-underline = ${colors.accent} 
 
 label = %percentage_used%%
+
+[module/wlan]
+type = internal/network
+interface = wlp61s0
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-underline = ${colors.accent}
+label-connected = %essid%
+
+format-disconnected = Down
+format-disconnected-prefix-foreground = ${colors.foreground-alt}
+format-disconnected-underline = ${colors.primary}
+
+[module/eth]
+type = internal/network
+interface = enp0s31f6
+interval = 3.0
+
+format-connected-underline = ${colors.accent}
+format-connected-prefix = "Eth "
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected = %local_ip%
+
+format-disconnected = ""
 
 [module/pulseaudio]
 type = internal/pulseaudio
